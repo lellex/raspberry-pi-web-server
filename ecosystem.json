@@ -9,10 +9,10 @@
 	"deploy" : {
 		"production" : {
 			"user" : "pi",
-			"host" : "<your-domain>.ddns.net",
-			"port" : "<your-router-port>",
+			"host" : "lellex.hopto.org",
+			"port" : "22",
 			"ref"  : "origin/master",
-			"repo" : "<your-github-repo>",
+			"repo" : "git@github.com:lellex/raspberry-pi-web-server.git",
 			"path" : "/var/www/web-server",
 			"post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
 		}
